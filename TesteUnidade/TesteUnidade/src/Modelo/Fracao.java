@@ -1,6 +1,5 @@
 package Modelo;
 
-import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 
 public class Fracao {
 
