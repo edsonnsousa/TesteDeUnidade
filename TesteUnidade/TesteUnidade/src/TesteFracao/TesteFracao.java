@@ -1,6 +1,6 @@
 package TesteFracao;
 
-import Model.Fracao;
+import Modelo.Fracao;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 import org.junit.Assert;
 import org.junit.Test;
