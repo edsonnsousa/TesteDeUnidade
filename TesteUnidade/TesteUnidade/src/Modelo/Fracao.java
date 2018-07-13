@@ -7,8 +7,8 @@ public class Fracao {
     private int numerador;
 
     public Fracao(int numerador, int denominador) {
-        if (denominador <= 0) {
-            throw new ValueException("Denominador deve ser maior que 0");
+        if (denominador == 0) {
+            throw new ValueException("Denominador não pode ser 0");
         }else{
             this.denominador = denominador;
             this.numerador = numerador;
@@ -16,12 +16,12 @@ public class Fracao {
 
     public String soma(Fracao fracao){
         float mmc = this.mmc(fracao.denominador,this.denominador);
-        return String.valueOf(this.numerador + fracao.numerador)+"/"+mmc;
+        return String.valueOf(this.numerador + fracao.numerador)+"-"+mmc;
     }
 
     public String diferenca(Fracao fracao){
         float mmc = this.mmc(fracao.denominador,this.denominador);
-        return String.valueOf(this.numerador - fracao.numerador)+"/"+mmc;
+        return String.valueOf(this.numerador - fracao.numerador)+"-"+mmc;
     }
     public String divisao(Fracao fracao){
         return this.multiplicacao(new Fracao(fracao.denominador, fracao.numerador));
@@ -29,7 +29,7 @@ public class Fracao {
 
     public String multiplicacao(Fracao fracao){
         String resultado;
-        resultado = String.valueOf(this.numerador * fracao.numerador)+ "/";
+        resultado = String.valueOf(this.numerador * fracao.numerador)+ "-";
         resultado += String.valueOf(this.denominador * fracao.denominador);
 
         return resultado;
