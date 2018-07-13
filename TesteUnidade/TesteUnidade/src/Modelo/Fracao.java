@@ -29,8 +29,8 @@ public class Fracao {
 
     public String multiplicacao(Fracao fracao){
         String resultado;
-        resultado = String.valueOf(this.numerador * fracao.numerador)+ "-";
-        resultado += String.valueOf(this.denominador * fracao.denominador);
+        resultado = Integer.valueOf(this.numerador * fracao.numerador)+ "-";
+        resultado +=Integer.valueOf.valueOf(this.denominador * fracao.denominador);
 
         return resultado;
     }
