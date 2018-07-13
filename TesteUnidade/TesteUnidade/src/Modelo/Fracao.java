@@ -10,9 +10,9 @@ public class Fracao {
     public Fracao(int numerador, int denominador) {
         if (denominador <= 0) {
             throw new ValueException("Denominador deve ser maior que 0");
-        }else
+        }else{
             this.denominador = denominador;
-            this.numerador = numerador;;
+            this.numerador = numerador;
     }
 
     public String soma(Fracao fracao){
